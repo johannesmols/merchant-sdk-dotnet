@@ -1269,19 +1269,21 @@ namespace PayPal.PayPalAPIInterfaceService.Model
 		[Description("integral-evolution")]INTEGRALEVOLUTION,	
 		[Description("express-checkout")]EXPRESSCHECKOUT,	
 		[Description("pro-hosted")]PROHOSTED,	
-		[Description("pro-api")]PROAPI,	
-		[Description("credit")]CREDIT	
-	}
+		[Description("pro-api")]PROAPI,
+        [Description("credit")] CREDIT,
+        [Description("refund")] REFUND,
+        [Description("reversal")] REVERSAL
+    }
 
 
 
 
-	/// <summary>
-	/// PaymentStatusCodeType 
-	///  This is the status of a PayPal Payment which matches the
-	/// output from IPN
-	///  
-	/// </summary>
+    /// <summary>
+    /// PaymentStatusCodeType 
+    ///  This is the status of a PayPal Payment which matches the
+    /// output from IPN
+    ///  
+    /// </summary>
     [Serializable]
 	public enum PaymentStatusCodeType {
 		[Description("None")]NONE,	
