@@ -17,7 +17,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PackageId>PayPalMerchantSDK</PackageId>
+    <PackageId>PayPalMerchantSDK_NetStandard</PackageId>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageProjectUrl>https://github.com/johannesmols/merchant-sdk-dotnet</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/johannesmols/merchant-sdk-dotnet.git</RepositoryUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DocumentationFile>bin\Debug\PayPalMerchantSDK.XML</DocumentationFile>
@@ -54,4 +57,10 @@
     <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+  <ItemGroup>
+	<None Include="README.md">
+		<Pack>true</Pack>
+		<PackagePath>\</PackagePath>
+	</None>
+  </ItemGroup>
 </Project>
